@@ -34,6 +34,10 @@ class Dog
   end
 
   def self.create(hash)
+    hash.map do |row|
+      self.new(:name, :breed)
+    end
+
     binding.pry
 
   end
