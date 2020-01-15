@@ -33,12 +33,10 @@ class Dog
 
   end
 
-  def self.create(hash)
-    hash.map do |row|
-      name = row[0]
-      breed = row[1]
-      self.new(name, breed)
-    end
+  def self.create(name:, breed:)
+    dog = Dog.new(name: name, breed: breed)
+    dog.save
+    dog
 
   end
 
