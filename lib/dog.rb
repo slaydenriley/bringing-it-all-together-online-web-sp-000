@@ -9,7 +9,7 @@ class Dog
   end
 
   def self.create_table
-    "CREATE TABLE IF EXISTS dogs"
+    DB[:conn].execute("CREATE TABLE IF EXISTS dogs")
   end
 
 end
