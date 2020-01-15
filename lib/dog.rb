@@ -50,7 +50,8 @@ class Dog
     dog
   end
 
-  def self.new_from_db
+  def self.new_from_db(hey)
+    binding.pry
   end
 
 end
