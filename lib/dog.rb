@@ -56,7 +56,6 @@ class Dog
     breed = array[2]
 
     dog = Dog.new(id, name, breed)
-    binding.pry
   end
 
 end
