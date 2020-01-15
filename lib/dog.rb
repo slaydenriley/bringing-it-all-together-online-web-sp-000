@@ -38,8 +38,6 @@ class Dog
       self.new(:name, :breed)
     end
 
-    binding.pry
-
   end
 
 end
